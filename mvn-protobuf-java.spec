@@ -4,10 +4,12 @@
 #
 Name     : mvn-protobuf-java
 Version  : 2.4.1
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar
 Source0  : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar
 Source1  : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom
+Source2  : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar
+Source3  : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-2-Clause
@@ -35,6 +37,12 @@ cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/pro
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.4.1
 cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.4.1
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0
+
 
 %files
 %defattr(-,root,root,-)
@@ -43,3 +51,5 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/pro
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar
 /usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom
+/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar
+/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.pom
