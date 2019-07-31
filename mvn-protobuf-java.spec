@@ -4,12 +4,15 @@
 #
 Name     : mvn-protobuf-java
 Version  : 2.4.1
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar
 Source0  : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar
 Source1  : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom
 Source2  : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar
 Source3  : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.pom
+Source4  : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar
+Source5  : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.pom
+Source6  : https://repo1.maven.org/maven2/com/google/protobuf/protobuf-parent/3.6.1/protobuf-parent-3.6.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-2-Clause
@@ -32,16 +35,25 @@ data components for the mvn-protobuf-java package.
 
 %install
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.4.1
-cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.4.1
+cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.4.1
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.4.1
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/3.6.1
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/3.6.1
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-parent/3.6.1
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/protobuf-parent/3.6.1/protobuf-parent-3.6.1.pom
 
 
 %files
@@ -53,3 +65,6 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/google/protobuf/pro
 /usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom
 /usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar
 /usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.pom
+/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar
+/usr/share/java/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.pom
+/usr/share/java/.m2/repository/com/google/protobuf/protobuf-parent/3.6.1/protobuf-parent-3.6.1.pom
